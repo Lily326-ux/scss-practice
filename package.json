@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap_grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "guplfile.js",
+  "scripts": {
+    "start": "gulp default",
+    "build": "gulp build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}

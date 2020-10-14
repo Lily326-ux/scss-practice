@@ -1,0 +1,60 @@
+@import "./variables.scss";
+@import "./helper.scss";
+@import "./mixin.scss";
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+    margin: 0 auto;
+    width: 80%;
+    /*border-bottom: 1px solid $border_gray-color; */ 
+    &_button {
+       &__input {
+          text-align: center;
+          width: 215px;
+          height: 28px;
+          font-size: 16px;   
+          background-color: $gray_bgc;
+          border: 1px solid $border_gray-color;  
+          border-radius: 3px; 
+          outline: none;  
+          }
+          &__input:active {
+            text-align: start;
+          }
+        }
+    &_items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
+        &__main_photo {
+            width: 30px;
+            border-radius: 50%;
+            border: 2px solid $border_img;
+            padding: 2px;
+        }
+        &__i i {
+            font-size: 23px;
+        }
+        }   
+     &_line {
+         background-color: $border_gray-color;
+         height: 1px;
+         border: none;
+     }   
+}
+
+.main-header {
+   margin: 0 auto;
+   width: 60%;
+   margin-top: 30px;
+    &_photo img{
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid $border_gray-color;
+      padding: 5px;
+    }
+}
