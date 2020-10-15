@@ -9,11 +9,10 @@
     height: 54px;
     margin: 0 auto;
     width: 80%;
-    /*border-bottom: 1px solid $border_gray-color; */ 
-    &_button {
+    &_search {
        &__input {
           text-align: center;
-          width: 215px;
+          width: 225px;
           height: 28px;
           font-size: 16px;   
           background-color: $gray_bgc;
@@ -25,18 +24,18 @@
             text-align: start;
           }
         }
-    &_items {
+    &_links {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 20%;
         &__main_photo {
-            width: 30px;
+            width: 25px;
             border-radius: 50%;
-            border: 2px solid $border_img;
+            border: 1px solid $border_img;
             padding: 2px;
         }
-        &__i i {
+        &__items i {
             font-size: 23px;
         }
         }   
@@ -48,13 +47,110 @@
 }
 
 .main-header {
+   display: flex;
    margin: 0 auto;
    width: 60%;
    margin-top: 30px;
-    &_photo img{
+   margin-bottom: 40px;
+    &_avatar img{
       width: 150px;
       border-radius: 50%;
-      border: 3px solid $border_gray-color;
+      border: 2px solid $border_gray-color;
       padding: 5px;
+      margin-right: 20px;
+      cursor: pointer;
     }
+    &_content {
+       display: flex;
+       flex-direction: column;
+       margin-left: 40px;
+       width: 70%;
+         &__edit {
+           display: flex; 
+           align-items: center;
+           margin-bottom: 20px;
+           width: 65%;
+           justify-content: space-around;
+            &_nickname {
+              font-size: 31px;
+              font-weight: 300;
+            }
+            &_profile {
+              text-decoration: none;
+              color: $border_img;
+              border: 1px solid $border_gray-color;
+              padding: 6px;
+              border-radius: 3px;
+            }
+            &_setting {
+              font-size: 26px;
+              cursor: pointer;
+            }
+         }
+         &__followers {
+           display: flex;
+           justify-content: space-around;
+           width: 70%;
+            &_text {
+              display: inline-flex;
+              font-size: 18px;
+              font-weight: 300;
+            }
+            &_number {
+              font-size: 18px;
+              text-decoration: none;
+              color: $border_img;
+            }
+         }
+    }
+}
+
+.stories {
+   display: flex;
+   margin: 0 auto;
+   width: 63%;
+     &_image {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        &__first {
+          width: 75px;
+          border-radius: 50%;
+          border: 2px solid $border_gray-color;
+          padding: 2px;
+          cursor: pointer;
+          margin: 0px 19px 0px 0px;
+            &_icon {
+              font-size: 14px;
+              padding-top: 9px;
+              padding-right: 25px;
+            }
+        }
+        &__second {
+          width: 75px;
+          border-radius: 50%;
+          border: 2px solid $border_gray-color;
+          padding: 2px;
+          cursor: pointer;
+          margin: 0px 19px;
+            &_icon {
+              font-size: 15px;
+              padding-top: 9px;
+              padding-right: 10px;
+            }
+        }
+        &__third {
+          width: 75px;
+          border-radius: 50%;
+          border: 2px solid $border_gray-color;
+          padding: 2px;
+          cursor: pointer;
+          margin: 0px 19px;
+            &_icon {
+              font-size: 15px;
+              padding-top: 9px;
+              padding-right: 10px;
+            }
+        }
+     }
 }
