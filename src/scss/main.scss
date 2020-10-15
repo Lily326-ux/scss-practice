@@ -96,6 +96,9 @@
               font-size: 18px;
               font-weight: 300;
             }
+            &_text b {
+              padding-right: 4px;
+            }
             &_number {
               font-size: 18px;
               text-decoration: none;
@@ -108,49 +111,32 @@
 .stories {
    display: flex;
    margin: 0 auto;
-   width: 63%;
-     &_image {
+   width: 67%;
+     &_info {
        display: flex;
        flex-direction: column;
        align-items: center;
-        &__first {
+        &__img {
           width: 75px;
           border-radius: 50%;
           border: 2px solid $border_gray-color;
           padding: 2px;
           cursor: pointer;
-          margin: 0px 19px 0px 0px;
-            &_icon {
-              font-size: 14px;
-              padding-top: 9px;
-              padding-right: 25px;
-            }
+          margin: 0px 19px 0px 19px;
         }
-        &__second {
-          width: 75px;
-          border-radius: 50%;
-          border: 2px solid $border_gray-color;
-          padding: 2px;
-          cursor: pointer;
-          margin: 0px 19px;
-            &_icon {
-              font-size: 15px;
-              padding-top: 9px;
-              padding-right: 10px;
-            }
-        }
-        &__third {
-          width: 75px;
-          border-radius: 50%;
-          border: 2px solid $border_gray-color;
-          padding: 2px;
-          cursor: pointer;
-          margin: 0px 19px;
-            &_icon {
-              font-size: 15px;
-              padding-top: 9px;
-              padding-right: 10px;
-            }
+        &__content {
+          display: flex;
+          align-items: baseline;
+          padding-right: 7px;
+          &_icon {
+            font-size: 14px;
+            padding-top: 9px;
+            padding-right: 3px;
+          }
+          &_text {
+            text-decoration: none;
+            color: $border_img;
+          }
         }
      }
 }
