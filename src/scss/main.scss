@@ -9,7 +9,7 @@ border-bottom: 1px solid $border_gray-color;
 
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .header {
@@ -46,6 +46,7 @@ border-bottom: 1px solid $border_gray-color;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: calc(10% - 10px);
     flex: 1;
     &__main_photo {
       width: 25px;
@@ -59,30 +60,35 @@ border-bottom: 1px solid $border_gray-color;
   }    
 }
 
+.container_for__main-header {
+  margin: 0 auto;
+  width: 65%;
+}
+
 .main-header {
   display: flex;
-  margin: 0 auto;
-  width: 60%;
   margin-top: 30px;
   margin-bottom: 40px;
-  &_avatar img {
-    width: 150px;
-    border-radius: 50%;
-    border: 2px solid $border_gray-color;
-    padding: 5px;
-    margin-right: 20px;
-    cursor: pointer;
+  &_avatar {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    &__img {
+      width: 150px;
+      border-radius: 50%;
+      border: 2px solid $border_gray-color;
+      padding: 5px;
+      cursor: pointer;
+    }
   }
   &_content {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    width: 70%;
+    flex: 3;
     &__edit {
       display: flex; 
       align-items: center;
       margin-bottom: 20px;
-      width: 65%;
       justify-content: space-around;
       &_nickname {
         font-size: 31px;
@@ -103,7 +109,6 @@ border-bottom: 1px solid $border_gray-color;
     &__followers {
       display: flex;
       justify-content: space-around;
-      width: 70%;
       &_text {
         display: inline-flex;
         font-size: 18px;
@@ -121,10 +126,13 @@ border-bottom: 1px solid $border_gray-color;
   }
 }
 
-.stories {
-  display: flex;
+.container_for_stories {
   margin: 0 auto;
   width: 67%;
+}
+
+.stories {
+  display: flex;
   &_info {
     display: flex;
     flex-direction: column;
