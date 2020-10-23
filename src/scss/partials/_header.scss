@@ -1,0 +1,48 @@
+header {
+  border-bottom: 1px solid $border_gray-color;
+}
+    
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+    
+.header {
+  height: 54px;
+  @include flexbox(flex, row, space-around, none, center);
+  &_logo {
+    margin-right: calc(10% - 10px);
+    @include flexbox(flex, row, center, 1, none);
+  }
+  &_search {
+    @include flexbox(flex,row, center, 1, none);
+    &__input {
+      text-align: center;
+      width: 225px;
+      height: 28px;
+      font-size: 16px;   
+      background-color: $gray_bgc;
+      border: 1px solid $border_gray-color;  
+      border-radius: 3px; 
+      outline: none;  
+      margin-right: calc(30% - 15px);
+      &:focus {
+        text-align: start;
+      }
+    }
+  }
+  &_links {
+    margin-right: calc(10% - 10px);
+    @include flexbox(flex, row, space-around, 1, center);
+    &__main_photo {
+      width: 25px;
+      border-radius: 50%;
+      border: 1px solid $border_img;
+      padding: 2px;
+    }
+    &__item i {
+      font-size: 23px;
+    }
+      
+  }     
+}
