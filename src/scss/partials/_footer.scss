@@ -1,0 +1,32 @@
+footer {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.footer-content {
+  padding-top: 20px;
+  &_list {
+    display: flex;
+    list-style: none;
+    &__item {
+      list-style-type: none;
+      &_text {
+        text-decoration: none;
+        color: $text_clr;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 0px 7px;
+      }
+    }
+  }
+}
+
+.footer-text {
+  display: flex;
+  padding-top: 10px;
+  &_item {
+    color:$p_clr;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
