@@ -1,11 +1,13 @@
-@mixin bg_color( $color) {
-    background-color: $color;
+@mixin text($color, $size, $weight) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
 }
 
-@mixin flexbox($block, $row:row, $contentx:none, $width:none, $contenty:none) {
+@mixin flexbox($block, $row:row, $contentx:none, $number:none, $contenty:none) {
     display: $block;
     flex-direction: $row;
     justify-content: $contentx;
-    flex: $width;
+    flex: $number;
     align-items: $contenty;
 }

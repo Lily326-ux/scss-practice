@@ -11,10 +11,8 @@ footer {
     &__item {
       list-style-type: none;
       &_text {
+        @include text($--color-primary-4, 13px, bold);
         text-decoration: none;
-        color: $text_clr;
-        font-size: 13px;
-        font-weight: bold;
         padding: 0px 7px;
       }
     }
@@ -25,8 +23,6 @@ footer {
   display: flex;
   padding-top: 10px;
   &_item {
-    color:$p_clr;
-    font-size: 13px;
-    font-weight: bold;
+    @include text($--color-primary-5, 13px, bold);
   }
 }

@@ -1,5 +1,5 @@
 header {
-  border-bottom: 1px solid $border_gray-color;
+  border-bottom: 1px solid $--color-primary-2;
 }
     
 .container {
@@ -21,8 +21,8 @@ header {
       width: 225px;
       height: 28px;
       font-size: 16px;   
-      background-color: $gray_bgc;
-      border: 1px solid $border_gray-color;  
+      background-color: $--color-primary-1;
+      border: 1px solid $--color-primary-2;  
       border-radius: 3px; 
       outline: none;  
       margin-right: calc(30% - 15px);
@@ -37,7 +37,7 @@ header {
     &__main_photo {
       width: 25px;
       border-radius: 50%;
-      border: 1px solid $border_img;
+      border: 1px solid $--color-primary-3;
       padding: 2px;
     }
     &__item i {
