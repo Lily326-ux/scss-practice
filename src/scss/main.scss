@@ -2,7 +2,9 @@
 @import "./helper.scss";
 @import "./mixin.scss";
 @import "./media.scss";
+@import "./container.scss";
 
 @import "./partials/header.scss";
 @import "./main/main.scss";
+@import "./main/main_forMobile.scss";
 @import "./partials/footer.scss";

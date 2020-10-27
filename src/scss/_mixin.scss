@@ -4,10 +4,15 @@
     font-weight: $weight;
 }
 
-@mixin flexbox($block, $row:row, $contentx:none, $number:none, $contenty:none) {
-    display: $block;
+@mixin flexbox($flex, $row:row, $contentx:none, $number:none, $contenty:none) {
+    display: $flex;
     flex-direction: $row;
     justify-content: $contentx;
     flex: $number;
     align-items: $contenty;
+}
+
+@mixin flexnone($flex:none, $number:none) {
+    display: $flex;
+    flex: $number;
 }

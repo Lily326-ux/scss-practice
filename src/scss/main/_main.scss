@@ -1,9 +1,18 @@
-.container_for__main-header {
+.container_for__main-content {
   margin: 0 auto;
   width: 65%;
+  @include width991px {
+    width: 75%;
+  }
+  @include width767px {
+    width: 90%;
+  }
+  @include width575px {
+    display: none;
+  }
 }
 
-.main-header {
+.main-content {
   display: flex;
   margin-top: 30px;
   margin-bottom: 40px;
@@ -15,9 +24,12 @@
       border: 2px solid $--color-primary-2;
       padding: 5px;
       cursor: pointer;
+      @include width991px {
+        width: 130px;
+      }
     }
   }
-  &_content {
+  &_info {
     @include flexbox(flex, column, none, 3, none);
     &__edit {
       margin-bottom: 20px;
@@ -26,6 +38,9 @@
         font-size: 31px;
         font-weight: 300;
         padding: 0px 20px;
+        @include width991px {
+          font-size: 26px;
+        }
       }
       &_profile {
         text-decoration: none;
@@ -34,10 +49,16 @@
         padding: 6px;
         border-radius: 3px;
         margin-right: 15px;
+        @include width991px {
+          font-size: 13px;
+        }
       }
       &_setting {
         font-size: 26px;
         cursor: pointer;
+        @include width991px {
+          font-size: 22px;
+        }
       }
     }
     &__followers {
@@ -46,7 +67,14 @@
         display: inline-flex;
         font-size: 18px;
         font-weight: 300;
-        padding: 0px 35px 0px 20px;
+        padding: 0px 30px 0px 20px;
+        @include width991px {
+          font-size: 16px;
+        }
+        @include width767px {
+          font-size: 15px;
+          padding: 0px 15px 0px 20px;
+        }
        }
       &_text b {
         padding-right: 4px;
@@ -56,6 +84,13 @@
         text-decoration: none;
         color: $--color-primary-3;
         padding-right: 30px;
+        @include width991px {
+          font-size: 16px;
+        }
+        @include width767px {
+          font-size: 15px;
+          padding-right: 15px;
+        }
       }
     }
   }
@@ -63,7 +98,7 @@
 
 .container_for_stories {
   margin: 0 auto;
-  width: 67%;
+  width: 70%;
 }
 
 .stories {
