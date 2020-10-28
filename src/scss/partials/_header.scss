@@ -41,6 +41,9 @@ header {
     }
     &__item i {
       font-size: 23px;
+      @include width767px {
+        font-size: 20px;
+      }
     }
       
   }     

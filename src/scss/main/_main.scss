@@ -99,6 +99,12 @@
 .container_for_stories {
   margin: 0 auto;
   width: 70%;
+  @include width991px {
+    width: 80%;
+  }
+  @include width767px {
+    width: 95%;
+  }
 }
 
 .stories {
@@ -112,18 +118,34 @@
       padding: 2px;
       cursor: pointer;
       margin: 0px 19px 0px 19px;
+      @include width991px {
+        width: 65px;
+      }
+      @include width575px {
+        width: 40px;
+      }
     }
     &__content {
       @include flexbox(flex, row, none, none, baseline);
       padding-right: 7px;
+      @include width575px {
+        
+      }
       &_icon {
         font-size: 14px;
         padding-top: 9px;
         padding-right: 3px;
+        @include width575px {
+          font-size: 12px;
+          padding-top: 3px;
+        }
       }
       &_text {
         text-decoration: none;
         color: $--color-primary-3;
+        @include width575px {
+          font-size: 12px;
+        }
       }
     }
   }
