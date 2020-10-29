@@ -31,7 +31,7 @@ header {
     }
   }
   &_links {
-    @include flexbox(flex, row, space-around, 1, center);
+    @include flexbox(flex, row, none, 1, center);
     margin-left: calc(5% - 10px);
     &__main_photo {
       width: 25px;
@@ -39,12 +39,23 @@ header {
       border: 1px solid $--color-primary-3;
       padding: 2px;
     }
-    &__item i {
+    &__item {
+      margin-right: 32px;
+      @include width991px {
+        margin-right: 25px;
+      }
+      @include width767px {
+        margin-right: 16px;
+      }
+      @include width575px {
+        margin-right: 12px;
+      }
+      i {
       font-size: 23px;
       @include width767px {
-        font-size: 20px;
+        font-size: 18px;
+        }
       }
-    }
-      
+    }   
   }     
 }

@@ -7,6 +7,10 @@
       list-style-type: none;
       &_text {
         @include text($--color-primary-4, 13px, bold);
+        @include width1199px {
+          font-size: 11px;
+          padding: 0px 5px;
+        }
         text-decoration: none;
         padding: 0px 7px;
       }
