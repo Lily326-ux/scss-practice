@@ -3,16 +3,17 @@
   &_list {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
     &__item {
       list-style-type: none;
       &_text {
         @include text($--color-primary-4, 13px, bold);
-        @include width1199px {
+        @include width991px {
           font-size: 11px;
-          padding: 0px 5px;
         }
         text-decoration: none;
-        padding: 0px 7px;
+        padding: 0px 5px;
       }
     }
   }
@@ -21,7 +22,11 @@
 .footer-text {
   display: flex;
   padding-top: 10px;
+  padding-bottom: 30px;
   &_item {
     @include text($--color-primary-5, 13px, bold);
+    @include width991px {
+      font-size: 11px;
+    }
   }
 }
