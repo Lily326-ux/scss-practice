@@ -153,23 +153,38 @@
   }
 }
 
+.container_forPhoto {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .profile-photo {
+  padding-top: 50px;
   &_list {
     border-top: 1px solid $--color-primary-7;
-    padding: 15px 0px;
+    padding: 18px 0px;
     display: flex;
     justify-content: space-evenly;
     &__item {
       text-decoration: none;
       color: $--color-primary-7;
-      font-size: 14px;
+      font-size: 13px;
+      &:focus {
+        color: $--color-primary-6;
+        /*border-top: 1px solid $--color-primary-6;*/
+      }
+      i {
+        font-family: fontawesome;
+        font-size: 13px;
+      }
     }
   }
   &_row {
     display: flex;
     &__img {
-      width: 320px;
-      padding: 10px 20px;
+      width: 304px;
+      padding: 10px 20px 15px 0px;
+      cursor: pointer;
     }
   }
 }
