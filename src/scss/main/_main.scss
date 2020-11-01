@@ -156,19 +156,37 @@
 .container_forPhoto {
   width: 70%;
   margin: 0 auto;
+  @include width991px {
+    width: 80%;
+  }
+  @include width767px {
+    width: 100%;
+  }
 }
 
 .profile-photo {
   padding-top: 50px;
+  @include width575px {
+    padding-top: 30px;
+  }
   &_list {
     border-top: 1px solid $--color-primary-7;
     padding: 18px 0px;
     display: flex;
     justify-content: space-evenly;
+    @include width767px {
+      padding: 14px 0px;
+    }
+    @include width575px {
+      padding: 10px 0px;
+    }
     &__item {
       text-decoration: none;
       color: $--color-primary-7;
       font-size: 13px;
+      @include width575px {
+        font-size: 9px;
+      }
       &:focus {
         color: $--color-primary-6;
         /*border-top: 1px solid $--color-primary-6;*/
@@ -176,15 +194,22 @@
       i {
         font-family: fontawesome;
         font-size: 13px;
+        @include width575px {
+          font-size: 10px;
+        }
       }
     }
   }
   &_row {
     display: flex;
+    justify-content: space-between;
     &__img {
-      width: 304px;
-      padding: 10px 20px 15px 0px;
+      width: 32%;
+      padding: 10px 0px;
       cursor: pointer;
+      @include width575px {
+        padding: 5px 0px;
+      }
     }
   }
 }

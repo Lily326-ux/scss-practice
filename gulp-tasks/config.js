@@ -5,7 +5,7 @@ module.exports = path = {
     img: './src/img/**',
     fonts: './src/fonts/**',
     scss: './src/scss/**/*.scss',
-    html: './src/*.html',
+    html: './src/**/*.html',
   },
   watch: {
     css: './dist/css',
