@@ -205,6 +205,7 @@
     justify-content: space-between;
     &__img {
       width: 32%;
+      height: 32%;
       padding: 10px 0px;
       cursor: pointer;
       @include width575px {

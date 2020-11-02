@@ -1,0 +1,131 @@
+.container_forSettings {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.edit-profile {
+  display: flex;
+  margin-top: 40px;
+  border: 1px solid $--color-primary-2;
+  &_left__content {
+    display: flex;
+    flex: 1;
+    border-right: 1px solid $--color-primary-2;
+    &_list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      list-style: none;
+      &__item {
+        padding: 25px;
+        font-size: 18px;
+      }
+    }
+  }
+  &_right__content {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    flex: 3;
+    &_photo {
+      display: flex;
+      align-items: center;
+      &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 25px;
+      &_nickname {
+        font-size: 25px;
+      }
+      &_edit {
+        text-decoration: none;
+        color: $--color-primary-8;
+        font-weight: bold;
+      }
+      }
+    }
+    &_section {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      &__name {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        &_col {
+          display: flex;
+          flex-direction: column;
+          padding-left: 30px;
+          &__input {
+            width: 300px;
+            padding: 8px 10px;
+            border: 1px solid $--color-primary-2;
+            border-radius: 3px;
+            margin-bottom: 10px;
+          }
+          &__firstText {
+
+          }
+          &__secondText {
+
+          }
+        }
+      }
+      &__nickname {
+  
+      }
+      &__website {
+  
+      }
+      &__about {
+  
+      }
+      &__e-mail {
+  
+      }
+      &__phone-number {
+  
+      }
+      &__sex {
+  
+      }
+      &__recommend {
+  
+      }
+      &__send {
+        display: flex;
+        margin-top: 30px;
+        &_null {
+          display: flex;
+          flex: 3;
+        }
+        &_button {
+          display: flex;
+          flex: 1;
+          color: $--color-primary-9;
+          background-color: $--color-primary-8;
+          border: none;
+          padding: 7px;
+          border-radius: 4px;
+          font-weight: bold;
+          margin-right: 15px;
+        }
+        &_text {
+          display: flex;
+          flex: 8;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: $--color-primary-8;
+        }
+      }
+    }
+  }
+}
