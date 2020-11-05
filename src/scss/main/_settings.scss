@@ -59,45 +59,143 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        &_bold {
+         
+        }
         &_col {
           display: flex;
           flex-direction: column;
-          padding-left: 30px;
           &__input {
-            width: 300px;
-            padding: 8px 10px;
+            width: 350px;
+            padding: 5px 10px;
             border: 1px solid $--color-primary-2;
             border-radius: 3px;
             margin-bottom: 10px;
+            font-size: 15px;
           }
           &__firstText {
-
+            font-size: 14px;
+            color: $--color-primary-5;
           }
           &__secondText {
-
+            font-size: 14px;
+            color: $--color-primary-5;
+            padding-top: 5px;
           }
         }
       }
       &__nickname {
-  
+        display: flex;
+        padding-top: 20px;
+        &_bold {
+        }
+        &_col {
+          display: flex;
+          flex-direction: column;
+          &__input {
+            width: 350px;
+            padding: 7px 10px;
+            border: 1px solid $--color-primary-2;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: bold;
+          }
+          &__text {
+            font-size: 14px;
+            color: $--color-primary-5;
+            &_link {
+              text-decoration: none;
+              color: $--color-primary-8;
+              font-size: 14px;
+            }
+          }
+        }
       }
       &__website {
-  
+        display: flex;
+        margin-top: 30px;
+        &_row {
+          &__input {
+            width: 350px;
+            padding: 7px 10px;
+            border: 1px solid #d1d1d1;
+            border-radius: 3px;
+            font-size: 15px;
+          }
+        }
       }
       &__about {
-  
+        display: flex;
+        margin-top: 15px;
+        &_col {
+          display: flex;
+          flex-direction: column;
+          &__forText {
+            width: 350px;
+            padding: 7px 10px;
+            border: 1px solid #d1d1d1;
+            border-radius: 3px;
+          }
+          &__text {
+            font-size: 14px;
+            color: $--color-primary-5;
+            padding-top: 30px;
+            b {
+              font-size: 16px;
+            }
+          }
+        }
       }
       &__e-mail {
-  
+        display: flex;
+        margin-top: 15px;
+        &_input {
+          width: 350px;
+          padding: 7px 10px;
+          border: 1px solid #d1d1d1;
+          border-radius: 3px;
+          font-size: 15px;
+        }
       }
       &__phone-number {
-  
+        display: flex;
+        margin-top: 15px;
+        &_input {
+          width: 350px;
+          padding: 7px 10px;
+          border: 1px solid #d1d1d1;
+          border-radius: 3px;
+          font-size: 15px;
+        }
       }
       &__sex {
-  
+        display: flex;
+        margin-top: 15px;
+        &_input {
+          width: 350px;
+          padding: 7px 10px;
+          border: 1px solid #d1d1d1;
+          border-radius: 3px;
+          font-size: 15px;
+        }
       }
       &__recommend {
-  
+        display: flex;
+        margin-top: 15px;
+        &_row {
+          display: flex;
+          justify-content: flex-start;
+          flex: 1.6;
+          &__checked {
+            display: flex;
+            justify-content: center;
+          }
+          &__text {
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
       }
       &__send {
         display: flex;
@@ -128,4 +226,9 @@
       }
     }
   }
+}
+
+.label_for_input {
+  display: flex;
+  flex: 0.7;
 }
