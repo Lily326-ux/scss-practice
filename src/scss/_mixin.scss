@@ -12,7 +12,10 @@
     align-items: $contenty;
 }
 
-@mixin flexnone($flex:none, $number:none) {
-    display: $flex;
-    flex: $number;
+@mixin border($width, $padding, $border, $radius, $size) {
+    width: $width;
+    padding: $padding;
+    border: $border;
+    border-radius: $radius;
+    font-size: $size;
 }

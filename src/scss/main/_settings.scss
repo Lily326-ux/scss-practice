@@ -18,8 +18,17 @@
       justify-content: flex-start;
       list-style: none;
       &__item {
-        padding: 25px;
-        font-size: 18px;
+        display: flex;
+        &:hover {
+          background-color: $--color-primary-1;
+          border-left: 2px solid black;
+        } 
+        &_link {
+          padding: 25px;
+          font-size: 18px;
+          text-decoration: none;
+          color: $--color-primary-6;
+        }
       }
     }
   }
@@ -41,6 +50,7 @@
         display: flex;
         flex-direction: column;
         padding: 0px 25px;
+        width: 350px;
       &_nickname {
         font-size: 25px;
       }
@@ -66,12 +76,8 @@
           display: flex;
           flex-direction: column;
           &__input {
-            width: 350px;
-            padding: 5px 10px;
-            border: 1px solid $--color-primary-2;
-            border-radius: 3px;
             margin-bottom: 10px;
-            font-size: 15px;
+            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
           }
           &__firstText {
             font-size: 14px;
@@ -93,12 +99,8 @@
           display: flex;
           flex-direction: column;
           &__input {
-            width: 350px;
-            padding: 7px 10px;
-            border: 1px solid $--color-primary-2;
-            border-radius: 3px;
+            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
             margin-bottom: 10px;
-            font-size: 15px;
             font-weight: bold;
           }
           &__text {
@@ -117,11 +119,7 @@
         margin-top: 30px;
         &_row {
           &__input {
-            width: 350px;
-            padding: 7px 10px;
-            border: 1px solid #d1d1d1;
-            border-radius: 3px;
-            font-size: 15px;
+            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
           }
         }
       }
@@ -132,10 +130,7 @@
           display: flex;
           flex-direction: column;
           &__forText {
-            width: 350px;
-            padding: 7px 10px;
-            border: 1px solid #d1d1d1;
-            border-radius: 3px;
+            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, none);
           }
           &__text {
             font-size: 14px;
@@ -151,49 +146,40 @@
         display: flex;
         margin-top: 15px;
         &_input {
-          width: 350px;
-          padding: 7px 10px;
-          border: 1px solid #d1d1d1;
-          border-radius: 3px;
-          font-size: 15px;
+          @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
         }
       }
       &__phone-number {
         display: flex;
         margin-top: 15px;
         &_input {
-          width: 350px;
-          padding: 7px 10px;
-          border: 1px solid #d1d1d1;
-          border-radius: 3px;
-          font-size: 15px;
+          @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
         }
       }
       &__sex {
         display: flex;
         margin-top: 15px;
         &_input {
-          width: 350px;
-          padding: 7px 10px;
-          border: 1px solid #d1d1d1;
-          border-radius: 3px;
-          font-size: 15px;
+          @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
         }
       }
       &__recommend {
         display: flex;
         margin-top: 15px;
+        align-items: center;
         &_row {
           display: flex;
           justify-content: flex-start;
-          flex: 1.6;
+          width: 350px;
           &__checked {
             display: flex;
             justify-content: center;
+            align-self: center;
           }
           &__text {
             font-size: 14px;
             font-weight: bold;
+            padding: 7px;
           }
         }
       }
