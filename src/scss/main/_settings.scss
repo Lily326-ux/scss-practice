@@ -8,26 +8,28 @@
   margin-top: 40px;
   border: 1px solid $--color-primary-2;
   &_left__content {
-    display: flex;
-    flex: 1;
+    @include flexboxSettings(flex, 1, none);
     border-right: 1px solid $--color-primary-2;
     &_list {
       display: flex;
-      flex-direction: column;
       align-items: flex-start;
+      flex-direction: column;
       justify-content: flex-start;
       list-style: none;
       &__item {
         display: flex;
+        border-left: 2px solid transparent;
+        width: 99%;
         &:hover {
           background-color: $--color-primary-1;
-          border-left: 2px solid black;
+          border-left: 2px solid $--color-primary-6;
         } 
         &_link {
-          padding: 25px;
+          padding: 17px;
           font-size: 18px;
           text-decoration: none;
           color: $--color-primary-6;
+          width: 100%;
         }
       }
     }
@@ -38,8 +40,7 @@
     padding: 25px;
     flex: 3;
     &_photo {
-      display: flex;
-      align-items: center;
+      @include flexboxSettings(flex, none, center);
       &__avatar {
         width: 40px;
         height: 40px;
@@ -66,9 +67,8 @@
       flex-direction: column;
       padding-top: 20px;
       &__name {
-        display: flex;
+        @include flexboxSettings(flex, none, flex-start);
         flex-direction: row;
-        align-items: flex-start;
         &_bold {
          
         }
@@ -77,7 +77,7 @@
           flex-direction: column;
           &__input {
             margin-bottom: 10px;
-            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
+            @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
           }
           &__firstText {
             font-size: 14px;
@@ -99,7 +99,7 @@
           display: flex;
           flex-direction: column;
           &__input {
-            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
+            @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
             margin-bottom: 10px;
             font-weight: bold;
           }
@@ -115,11 +115,11 @@
         }
       }
       &__website {
-        display: flex;
+        @include flexboxSettings(flex, none, center);
         margin-top: 30px;
         &_row {
           &__input {
-            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
+            @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
           }
         }
       }
@@ -130,7 +130,7 @@
           display: flex;
           flex-direction: column;
           &__forText {
-            @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, none);
+            @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, none);
           }
           &__text {
             font-size: 14px;
@@ -146,27 +146,26 @@
         display: flex;
         margin-top: 15px;
         &_input {
-          @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
+          @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
         }
       }
       &__phone-number {
         display: flex;
         margin-top: 15px;
         &_input {
-          @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
+          @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
         }
       }
       &__sex {
-        display: flex;
+        @include flexboxSettings(flex, none, center);
         margin-top: 15px;
         &_input {
-          @include border(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
+          @include input(350px, 7px 10px, 1px solid #d1d1d1, 3px, 15px);
         }
       }
       &__recommend {
-        display: flex;
+        @include flexboxSettings(flex, none, center);
         margin-top: 15px;
-        align-items: center;
         &_row {
           display: flex;
           justify-content: flex-start;
@@ -184,15 +183,14 @@
         }
       }
       &__send {
-        display: flex;
+        @include flexboxSettings(flex, none, center);
         margin-top: 30px;
         &_null {
           display: flex;
           flex: 3;
         }
         &_button {
-          display: flex;
-          flex: 1;
+          @include flexboxSettings(flex, 1, none);
           color: $--color-primary-9;
           background-color: $--color-primary-8;
           border: none;
@@ -202,12 +200,11 @@
           margin-right: 15px;
         }
         &_text {
-          display: flex;
-          flex: 8;
-          align-items: center;
+          @include flexboxSettings(flex, 8, center);
           justify-content: center;
           text-decoration: none;
           color: $--color-primary-8;
+          font-weight: bold;
         }
       }
     }
@@ -215,6 +212,5 @@
 }
 
 .label_for_input {
-  display: flex;
-  flex: 0.7;
+  @include flexboxSettings(flex, 0.7, none);
 }

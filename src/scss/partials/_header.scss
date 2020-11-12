@@ -56,6 +56,10 @@ header {
         font-size: 18px;
         }
       }
+      &__main_page {
+        text-decoration: none;
+        color: $--color-primary-6;
+      }
     }   
   }     
 }
