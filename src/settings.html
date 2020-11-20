@@ -9,135 +9,90 @@
 
     <div class="container_forSettings">
       <div class="edit-profile">
-        <div class="edit-profile_left__content">
-          <ul class="edit-profile_left__content_list">
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#"><b>Редактировать профиль</b></a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Сменить пароль</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Приложения и сайты</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Эл. почта и SMS</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Push-уведомления</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Управление контактами</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Конфиденциальность и безопасность</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Входы в аккаунт</a>
-            </li>
-            <li class="edit-profile_left__content_list__item">
-              <a class="edit-profile_left__content_list__item_link" href="#">Электронные письма от Instagram</a>
-            </li>
-          </ul>
-        </div>
+        //= partials/aside.html
         <div class="edit-profile_right__content">
-         <!-- <div class="edit-profile_right__content_photo">
-            <div class="label_for_input">
-              <img class="edit-profile_right__content_photo__avatar" src="./img/photo_2020-10-14_13-20-09.jpg" alt="avatar">
-            </div >
-            <div class="edit-profile_right__content_photo__text">
-              <span class="edit-profile_right__content_photo__text_nickname">
-                marylin_1
+         <div class="edit-profile_right__content_column">
+           <div class="edit-profile_right__content_column__avatar">
+             <img class="edit-profile_right__content_column__avatar_img" src="./img/photo_2020-10-14_13-20-09.jpg" alt="avatar">
+           </div>
+           <div class="edit-profile_right__content_column__edit_photo">
+             <h2 class="edit-profile_right__content_column__edit_photo__text"> marylin_1</h2>
+             <a class="edit-profile_right__content_column__edit_photo__link" href="#">Сменить фото профиля</a>
+           </div>
+         </div>
+         <div class="edit-profile_right__content_column">
+           <div class="label_for_input">
+             <h2 class="label_for_input__text">Имя</h2>
+           </div>
+           <div class="edit-profile_right__content_column__info">
+             <div class="edit-profile_right__content_column__info_content">
+              <input class="edit-profile_right__content_column__info_content_input" type="text" placeholder="Имя">
+              <span class="edit-profile_right__content_column__info_content_text1">Чтобы людям было проще находить ваш аккаунт, используйте
+                имя, под которым вас знают: ваше имя и фамилию, никнейм
+                или название компании.
               </span>
-              <a class="edit-profile_right__content_photo__text_edit" href="#">Сменить фото профиля</a>
+              <span class="edit-profile_right__content_column__info_content_text2">
+                Изменить имя можно не более двух раз в течение 14 дней.
+              </span>
+             </div>
+           </div>
+         </div>
+         <div class="edit-profile_right__content_column">
+           <div class="label_for_input">
+            <h2 class="label_for_input__text">Имя <br> пользователя</h2>
+           </div>
+           <div class="edit-profile_right__content_column__info"> 
+             <div class="edit-profile_right__content_column__info_content">
+               <input class="edit-profile_right__content_column__info_content_input" type="text" placeholder="Имя пользователя">
+               <span class="edit-profile_right__content_column__info_content_text1">В большинстве случаев у вас будет ещё 14 дней, чтобы снова
+                 поменять имя пользователя на uprt_lily.
+                 <a class="edit-profile_right__content_column__info_content_text1__link" href="#">Подробнее</a>
+               </span>
+             </div>
+           </div>
+         </div>
+         <div class="edit-profile_right__content_column">
+           <div class="label_for_input">
+             <h2 class="label_for_input__text">Веб-сайт</h2>
+           </div>
+           <div class="edit-profile_right__content_column__info">
+             <div class="edit-profile_right__content_column__info_content">
+               <input class="edit-profile_right__content_column__info_content_input" type="text" placeholder="Веб-сайт">
+             </div>
+           </div>
+         </div>
+         <div class="edit-profile_right__content_column">
+          <div class="label_for_input">
+            <h2 class="label_for_input__text">О себе</h2>
+          </div>
+          <div class="edit-profile_right__content_column__info">
+            <div class="edit-profile_right__content_column__info_content">
+              <textarea class="edit-profile_right__content_column__info_content_textarea"></textarea>
+              <span class="edit-profile_right__content_column__info_content_text1">
+                <b>Личная информация</b><br>
+                Укажите личную информацию, даже если аккаунт будет
+                 использоваться для компании, домашнего животного или в
+                 других целях. Эти сведения не будут показываться в вашем
+                 общедоступном профиле.
+              </span>
             </div>
           </div>
-          <form class="edit-profile_right__content_section">
-            <div class="edit-profile_right__content_section__name">
-              <div class="label_for_input">
-                <b class="edit-profile_right__content_section__name_bold">Имя</b>
-              </div>
-              <div class="edit-profile_right__content_section__name_col">
-                <input class="edit-profile_right__content_section__name_col__input" type="text" placeholder="Имя">
-                <span class="edit-profile_right__content_section__name_col__firstText">
-                  Чтобы людям было проще находить ваш аккаунт, используйте<br>
-                  имя, под которым вас знают: ваше имя и фамилию, никнейм<br>
-                  или название компании.
-                </span>
-                <span class="edit-profile_right__content_section__name_col__secondText">
-                  Изменить имя можно не более двух раз в течение 14 дней.
-                </span>
-              </div>
-            </div>
-            <div class="edit-profile_right__content_section__nickname">
-              <div class="label_for_input">
-                <b class="edit-profile_right__content_section__nickname_bold">Имя<br>пользователя</b>
-              </div>
-              <div class="edit-profile_right__content_section__nickname_col">
-                <input class="edit-profile_right__content_section__nickname_col__input" type="text" placeholder="marylin_1">
-                <span class="edit-profile_right__content_section__nickname_col__text">
-                  В большинстве случаев у вас будет ещё 14 дней, чтобы снова<br>
-                  поменять имя пользователя на marylin_1.
-                    <a class="edit-profile_right__content_section__nickname_col__text_link" href="#">Подробнее</a>
-                </span>
-              </div>
-            </div>
-            <div class="edit-profile_right__content_section__website">
-              <div class="label_for_input">
-                <b>Веб-сайт</b>
-              </div>
-              <div class="edit-profile_right__content_section__website_row">
-                <input class="edit-profile_right__content_section__website_row__input" type="text" placeholder="Веб-сайт">
-              </div>
-            </div>
-            <div class="edit-profile_right__content_section__about">
-              <div class="label_for_input">
-                <b>О себе</b> 
-              </div>
-              <div class="edit-profile_right__content_section__about_col">
-                <textarea class="edit-profile_right__content_section__about_col__forText" name="text"></textarea>
-                <span class="edit-profile_right__content_section__about_col__text">
-                  <b>Личная информация</b><br>
-                  Укажите личную информацию, даже если аккаунт будет<br>
-                  использоваться для компании, домашнего животного или в<br>
-                  других целях. Эти сведения не будут показываться в вашем<br>
-                  общедоступном профиле.
-                </span>
-              </div>
-            </div>
-            <div class="edit-profile_right__content_section__e-mail">
-              <div class="label_for_input">
-                <b>Эл. адрес</b>
-              </div>
-                <input class="edit-profile_right__content_section__e-mail_input" type="text" placeholder="Эл. адрес">
-            </div>
-            <div class="edit-profile_right__content_section__phone-number">
-              <div class="label_for_input">
-                <b>Номер<br>телефона</b>
-              </div>
-              <input class="edit-profile_right__content_section__phone-number_input" type="text" placeholder="Номер телефона">
-            </div>
-            <div class="edit-profile_right__content_section__sex">
-              <div class="label_for_input">
-                <b>Пол</b> 
-              </div>
-              <input class="edit-profile_right__content_section__sex_input" type="text" placeholder="Пол">
-            </div>
-            <div class="edit-profile_right__content_section__recommend">
-              <div class="label_for_input">
-                <b>Рекомендации<br>похожих<br>аккаунтов</b>
-              </div>
-              <div class="edit-profile_right__content_section__recommend_row">
-                <input class="edit-profile_right__content_section__recommend_row__checked" type="checkbox" name="recommend">
-                <label class="edit-profile_right__content_section__recommend_row__text" for="recommend">Рекомендовать ваш <br>аккаунт возможным <br>подписчикам.</label>
-              </div>
-            </div>
-            <div class="edit-profile_right__content_section__send">
-              <div class="edit-profile_right__content_section__send_null"></div>
-              <button class="edit-profile_right__content_section__send_button">Отправить</button>
-              <a class="edit-profile_right__content_section__send_text" href="#">Временно отключить мой аккаунт</a>
-            </div>
-          </form>-->
+         </div>
+         <div class="edit-profile_right__content_column">
+           
+         </div>
+         <div class="edit-profile_right__content_column">
+
+         </div>
+         <div class="edit-profile_right__content_column">
+           
+         </div>
+         <div class="edit-profile_right__content_column">
+
+         </div>
+         <div class="edit-profile_right__content_column">
+
+         </div>
         </div>
       </div>
     </div>
