@@ -74,8 +74,25 @@
         margin-left: 25px;
         &_content {
           display: flex; 
-          flex: 0.75;
+          flex: 0.7;
           flex-direction: column;
+          &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            &_input {
+              margin-right: 5px;
+            }
+            &_text {
+              font-weight: bold;
+              font-size: 15px;
+              &__link {
+                text-decoration: none;
+                color: $--color-primary-8;
+                font-weight: bold;
+              }
+            }
+          }
           &_input {
             display: flex;
             flex-direction: row;
@@ -83,6 +100,7 @@
             border: 1px solid $--color-primary-2;
             padding: 6px 10px;
             font-size: 15px;
+            outline: none;
           }
           &_text1 {
             font-size: 14px;
@@ -106,9 +124,43 @@
             border: 1px solid $--color-primary-2;
             resize: vertical;
             height: 60px;
+            outline: none;
           }
         }
       }
+     &_row {
+       display: flex;
+       flex-direction: row;
+       flex: 1;
+       margin-top: 20px;
+       align-items: center;
+      &__left {
+        display: flex;
+        flex: 1.5;
+        justify-content: flex-end;
+        &_btn {
+          background: $--color-primary-8;
+          border: 1px solid transparent;
+          padding: 7px 9px;
+          border-radius: 4px;
+          color: $--color-primary-9;
+          font-weight: bold;
+          outline: none;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+      &__right {
+        display: flex;
+        flex: 2.5;
+        justify-content: center;
+        &_link {
+          text-decoration: none;
+          color: $--color-primary-8;
+          font-weight: bold; 
+        }
+      }
+     }
     }
   }
 }
@@ -117,7 +169,7 @@
   @include flexboxSettings(flex, 1, none);
   justify-content: flex-end;
   &__text {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     text-align: right;
   }
